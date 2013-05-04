@@ -25,3 +25,6 @@ Study iOS Development
 # 2013-05-02
 > * UIView Animation
 > * Simple Animation Using UIImageView
+
+# 2013-05-04
+> * Graphics Drawing Tutorial using Quartz 2D
