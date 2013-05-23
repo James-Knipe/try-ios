@@ -13,6 +13,7 @@
 @interface MTLocationViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) id<MTLocationViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
 @end
 
 @protocol MTLocationViewControllerDelegate <NSObject>

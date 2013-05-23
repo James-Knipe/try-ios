@@ -29,6 +29,7 @@
 		0A0AA0CD174BA989005D739E /* MTLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0CB174BA989005D739E /* MTLocationViewController.m */; };
 		0A0AA0CE174BA989005D739E /* MTLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0CC174BA989005D739E /* MTLocationViewController.xib */; };
 		0A0AA0D1174BB447005D739E /* MTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0D0174BB447005D739E /* MTConstants.m */; };
+		0A0AA0DC174C4EE4005D739E /* MTForecastClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0DB174C4EE4005D739E /* MTForecastClient.m */; };
 		242F2F577AAF455EBB616235 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8B692B9CC04803AF20BF53 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +48,7 @@
 		0A0AA0A7174B9D4E005D739E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0A0AA0A9174B9D4E005D739E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0A0AA0B0174B9D61005D739E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		0A0AA0B2174BA2B2005D739E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		0A0AA0B2174BA2B2005D739E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0A0AA0B4174BA6B1005D739E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0A0AA0B6174BA6B8005D739E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0A0AA0B8174BA6C0005D739E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -63,6 +64,8 @@
 		0A0AA0CC174BA989005D739E /* MTLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLocationViewController.xib; sourceTree = "<group>"; };
 		0A0AA0CF174BB447005D739E /* MTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConstants.h; sourceTree = "<group>"; };
 		0A0AA0D0174BB447005D739E /* MTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConstants.m; sourceTree = "<group>"; };
+		0A0AA0DA174C4EE4005D739E /* MTForecastClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTForecastClient.h; sourceTree = "<group>"; };
+		0A0AA0DB174C4EE4005D739E /* MTForecastClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTForecastClient.m; sourceTree = "<group>"; };
 		6E8B692B9CC04803AF20BF53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC81EAC2B6E45BBA38B249A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -138,6 +141,8 @@
 				0A0AA0CC174BA989005D739E /* MTLocationViewController.xib */,
 				0A0AA0CF174BB447005D739E /* MTConstants.h */,
 				0A0AA0D0174BB447005D739E /* MTConstants.m */,
+				0A0AA0DA174C4EE4005D739E /* MTForecastClient.h */,
+				0A0AA0DB174C4EE4005D739E /* MTForecastClient.m */,
 			);
 			path = Rain;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				0A0AA0C8174BA975005D739E /* MTForecastViewController.m in Sources */,
 				0A0AA0CD174BA989005D739E /* MTLocationViewController.m in Sources */,
 				0A0AA0D1174BB447005D739E /* MTConstants.m in Sources */,
+				0A0AA0DC174C4EE4005D739E /* MTForecastClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

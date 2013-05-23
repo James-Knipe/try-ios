@@ -16,9 +16,13 @@ NSString * const MTRainUserDefaultsLocations = @"locations";
 #pragma mark Notifications
 NSString * const MTRainDidAddLocationNotification = @"com.mobileTuts.MTRainDidAddLocationNotification";
 NSString * const MTRainLocationDidChangeNotification = @"com.mobileTuts.MTRainLocationDidChangeNotification";
+NSString * const MTRainReachabilityStatusDidChangeNotification = @"com.mobileTuts.MTRainReachabilityStatusDidChangeNotification";
 #pragma mark -
 #pragma mark Location Keys
 NSString * const MTLocationKeyCity = @"city";
 NSString * const MTLocationKeyCountry = @"country";
 NSString * const MTLocationKeyLatitude = @"latitude";
 NSString * const MTLocationKeyLongitude = @"longitude";
+#pragma mark -
+#pragma mark Forecast API
+NSString * const MTForecastAPIKey = @"9ea17787d84f1868e60fd7207cb88a40";
