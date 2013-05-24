@@ -25,7 +25,7 @@ static NSString *LocationCell = @"LocationCell";
         // Load Locations
         [self loadLocations];
         // Add Observer
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didAddLocation) name:MTRainDidAddLocationNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didAddLocation:) name:MTRainDidAddLocationNotification object:nil];
     }
     return self;
 }

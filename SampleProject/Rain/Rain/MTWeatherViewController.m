@@ -176,8 +176,12 @@
 #pragma mark Helper Methods
 - (void)processPlacemark:(CLPlacemark *)placemark {
     // Extract Data
-    NSString *city = [placemark locality];
-    NSString *country = [placemark country];
+    // NSString *city = [placemark.addressDictionary valueForKey:@"City"];
+    // NSString *street = [placemark.addressDictionary valueForKey:@"Street"];
+    // NSString *city = [placemark.addressDictionary locality];
+    // NSString *country = [placemark country];
+    NSString *country = placemark.country;
+    NSString *city = placemark.administrativeArea;
     CLLocationDegrees lat = placemark.location.coordinate.latitude;
     CLLocationDegrees lon = placemark.location.coordinate.longitude;
     // Create Location Dictionary
