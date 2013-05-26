@@ -1,19 +1,68 @@
 //
 //  AppDelegate.m
-//  PushChat
+//  PushChatStarter
 //
-//  Created by Kevin on 5/24/13.
-//  Copyright (c) 2013 Kevin. All rights reserved.
+//  Created by Kauserali on 28/03/13.
+//  Copyright (c) 2013 Ray Wenderlich. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ChatViewController.h"
+#import "DataModel.h"
+#import "Message.h"
+
+void ShowErrorAlert(NSString* text)
+{
+	UIAlertView* alertView = [[UIAlertView alloc]
+                              initWithTitle:text
+                              message:nil
+                              delegate:nil
+                              cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                              otherButtonTitles:nil];
+    
+	[alertView show];
+}
 
 @implementation AppDelegate
 
+- (void)addMessageFromRemoteNotification:(NSDictionary*)userInfo updateUI:(BOOL)updateUI
+{
+    UINavigationController *navigationController = (UINavigationController*)_window.rootViewController;
+    ChatViewController *chatViewController =
+    (ChatViewController*)[navigationController.viewControllers  objectAtIndex:0];
+    
+    DataModel *dataModel = chatViewController.dataModel;
+    
+	Message *message = [[Message alloc] init];
+	message.date = [NSDate date];
+    
+	NSString *alertValue = [[userInfo valueForKey:@"aps"] valueForKey:@"alert"];
+    
+	NSMutableArray *parts = [NSMutableArray arrayWithArray:[alertValue componentsSeparatedByString:@": "]];
+	message.senderName = [parts objectAtIndex:0];
+	[parts removeObjectAtIndex:0];
+	message.text = [parts componentsJoinedByString:@": "];
+    
+	int index = [dataModel addMessage:message];
+    
+	if (updateUI)
+		[chatViewController didSaveMessage:message atIndex:index];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Let the device know we want to receive push notifications
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    // Override point for customization after application launch.
+    
+    _storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert)];
+    if(launchOptions != nil){
+        NSDictionary *dictionary = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+        if(dictionary != nil){
+            NSLog(@"Launched from push notification: %@", dictionary);
+            [self addMessageFromRemoteNotification:dictionary updateUI:NO];
+        }
+    }
+    
     return YES;
 }
 
@@ -44,14 +93,50 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+- (void)postUpdateRequest
 {
-	NSLog(@"My token is: %@", deviceToken);
+    UINavigationController *navigationController = (UINavigationController*)_window.rootViewController;
+    ChatViewController *chatViewController = (ChatViewController*)[navigationController.viewControllers objectAtIndex:0];
+    
+    DataModel *dataModel = chatViewController.dataModel;
+    
+    NSDictionary *params = @{@"cmd":@"update",
+                             @"user_id":[dataModel userId],
+                             @"token":[dataModel deviceToken]};
+    AFHTTPClient *client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:ServerApiURL]];
+    [client
+     postPath:@"/api.php"
+     parameters:params
+     success:nil failure:nil];
 }
 
-- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-	NSLog(@"Failed to get token, error: %@", error);
+    UINavigationController *navigationController = (UINavigationController *)_window.rootViewController;
+    ChatViewController *chatViewController = (ChatViewController *)[navigationController.viewControllers objectAtIndex:0];
+    DataModel *dataModel = chatViewController.dataModel;
+    NSString *oldToken = [dataModel deviceToken];
+    
+    NSString *newToken = [deviceToken description];
+    newToken = [newToken stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    newToken = [newToken stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSLog(@"My token is: %@", newToken);
+    [dataModel setDeviceToken:newToken];
+    if([dataModel joinedChat] && ![newToken isEqualToString:oldToken]){
+        [self postUpdateRequest];
+    }
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"Failed to get token, error: %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    NSLog(@"Received notification: %@", userInfo);
+    [self addMessageFromRemoteNotification:userInfo updateUI:YES];
 }
 
 @end
