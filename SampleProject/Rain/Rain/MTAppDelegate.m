@@ -10,7 +10,7 @@
 
 #import "MTWeatherViewController.h"
 #import "MTForecastViewController.h"
-#import "MTLocationViewController.h"
+#import "MTLocationsViewController.h"
 
 @interface MTAppDelegate ()
 
@@ -24,7 +24,7 @@
 #pragma mark Application Did Finish Launching with Options
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Initialize View Controllers
-    MTLocationViewController *leftViewController = [[MTLocationViewController alloc] initWithNibName:@"MTLocationViewController" bundle:nil];
+    MTLocationsViewController *leftViewController = [[MTLocationsViewController alloc] initWithNibName:@"MTLocationsViewController" bundle:nil];
     MTForecastViewController *rightViewController = [[MTForecastViewController alloc] initWithNibName:@"MTForecastViewController" bundle:nil];
     MTWeatherViewController *centerViewController = [[MTWeatherViewController alloc] initWithNibName:@"MTWeatherViewController" bundle:nil];
     

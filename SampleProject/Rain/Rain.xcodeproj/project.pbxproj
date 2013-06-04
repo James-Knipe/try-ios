@@ -7,172 +7,319 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0AA094174B9D4E005D739E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA093174B9D4E005D739E /* UIKit.framework */; };
-		0A0AA096174B9D4E005D739E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA095174B9D4E005D739E /* Foundation.framework */; };
-		0A0AA098174B9D4E005D739E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA097174B9D4E005D739E /* CoreGraphics.framework */; };
-		0A0AA09E174B9D4E005D739E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA09C174B9D4E005D739E /* InfoPlist.strings */; };
-		0A0AA0A0174B9D4E005D739E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA09F174B9D4E005D739E /* main.m */; };
-		0A0AA0A4174B9D4E005D739E /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0A3174B9D4E005D739E /* MTAppDelegate.m */; };
-		0A0AA0A6174B9D4E005D739E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0A5174B9D4E005D739E /* Default.png */; };
-		0A0AA0A8174B9D4E005D739E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0A7174B9D4E005D739E /* Default@2x.png */; };
-		0A0AA0AA174B9D4E005D739E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0A9174B9D4E005D739E /* Default-568h@2x.png */; };
-		0A0AA0B1174B9D61005D739E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0B0174B9D61005D739E /* README.md */; };
-		0A0AA0B3174BA2B2005D739E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0B2174BA2B2005D739E /* Podfile */; };
-		0A0AA0BC174BA6DD005D739E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA0BA174BA6CA005D739E /* CoreLocation.framework */; };
-		0A0AA0BD174BA6E2005D739E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA0B8174BA6C0005D739E /* QuartzCore.framework */; };
-		0A0AA0BE174BA6E8005D739E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA0B6174BA6B8005D739E /* SystemConfiguration.framework */; };
-		0A0AA0BF174BA6EE005D739E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0AA0B4174BA6B1005D739E /* MobileCoreServices.framework */; };
-		0A0AA0C3174BA957005D739E /* MTWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0C1174BA957005D739E /* MTWeatherViewController.m */; };
-		0A0AA0C4174BA957005D739E /* MTWeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0C2174BA957005D739E /* MTWeatherViewController.xib */; };
-		0A0AA0C8174BA975005D739E /* MTForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0C6174BA975005D739E /* MTForecastViewController.m */; };
-		0A0AA0C9174BA975005D739E /* MTForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0C7174BA975005D739E /* MTForecastViewController.xib */; };
-		0A0AA0CD174BA989005D739E /* MTLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0CB174BA989005D739E /* MTLocationViewController.m */; };
-		0A0AA0CE174BA989005D739E /* MTLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AA0CC174BA989005D739E /* MTLocationViewController.xib */; };
-		0A0AA0D1174BB447005D739E /* MTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0D0174BB447005D739E /* MTConstants.m */; };
-		0A0AA0DC174C4EE4005D739E /* MTForecastClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AA0DB174C4EE4005D739E /* MTForecastClient.m */; };
-		242F2F577AAF455EBB616235 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8B692B9CC04803AF20BF53 /* libPods.a */; };
+		CC9D2B46173D616300492230 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B45173D616300492230 /* UIKit.framework */; };
+		CC9D2B48173D616300492230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B47173D616300492230 /* Foundation.framework */; };
+		CC9D2B4A173D616300492230 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B49173D616300492230 /* CoreGraphics.framework */; };
+		CC9D2B50173D616300492230 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC9D2B4E173D616300492230 /* InfoPlist.strings */; };
+		CC9D2B52173D616300492230 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D2B51173D616300492230 /* main.m */; };
+		CC9D2B56173D616300492230 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D2B55173D616300492230 /* MTAppDelegate.m */; };
+		CC9D2B63173D636E00492230 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B62173D636E00492230 /* SystemConfiguration.framework */; };
+		CC9D2B65173D637200492230 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B64173D637200492230 /* MobileCoreServices.framework */; };
+		CC9D2B67173D637700492230 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B66173D637700492230 /* CoreLocation.framework */; };
+		CC9D2B69173D637C00492230 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9D2B68173D637C00492230 /* QuartzCore.framework */; };
+		CC9D2B6F173D662A00492230 /* MTWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D2B6D173D662A00492230 /* MTWeatherViewController.m */; };
+		CC9D2B74173D663600492230 /* MTForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D2B72173D663600492230 /* MTForecastViewController.m */; };
+		CC9D2B75173D663600492230 /* MTForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9D2B73173D663600492230 /* MTForecastViewController.xib */; };
+		CC9D2B79173D664100492230 /* MTLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D2B77173D664100492230 /* MTLocationsViewController.m */; };
+		CC9D2B7A173D664100492230 /* MTLocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9D2B78173D664100492230 /* MTLocationsViewController.xib */; };
+		CC9D2B7E173D721E00492230 /* MTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9D2B7D173D721E00492230 /* MTConstants.m */; };
+		CCB3F7CB1747768300600FDC /* MTForecastClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB3F7CA1747768300600FDC /* MTForecastClient.m */; };
+		CCCD76761757812600A12C44 /* MTWeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76751757812600A12C44 /* MTWeatherViewController.xib */; };
+		CCCD768E1757814600A12C44 /* background-add-location-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76781757814600A12C44 /* background-add-location-cell.png */; };
+		CCCD768F1757814600A12C44 /* background-add-location-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76791757814600A12C44 /* background-add-location-cell@2x.png */; };
+		CCCD76901757814600A12C44 /* background-calendar-day-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD767A1757814600A12C44 /* background-calendar-day-cell.png */; };
+		CCCD76911757814600A12C44 /* background-calendar-day-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD767B1757814600A12C44 /* background-calendar-day-cell@2x.png */; };
+		CCCD76921757814600A12C44 /* background-center.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD767C1757814600A12C44 /* background-center.png */; };
+		CCCD76931757814600A12C44 /* background-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD767D1757814600A12C44 /* background-center@2x.png */; };
+		CCCD76941757814600A12C44 /* background-hour-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD767E1757814600A12C44 /* background-hour-cell.png */; };
+		CCCD76951757814600A12C44 /* background-hour-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD767F1757814600A12C44 /* background-hour-cell@2x.png */; };
+		CCCD76961757814600A12C44 /* background-location-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76801757814600A12C44 /* background-location-cell.png */; };
+		CCCD76971757814600A12C44 /* background-location-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76811757814600A12C44 /* background-location-cell@2x.png */; };
+		CCCD76981757814600A12C44 /* button-delete-location-cell.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76821757814600A12C44 /* button-delete-location-cell.png */; };
+		CCCD76991757814600A12C44 /* button-delete-location-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76831757814600A12C44 /* button-delete-location-cell@2x.png */; };
+		CCCD769A1757814600A12C44 /* button-location-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76841757814600A12C44 /* button-location-normal.png */; };
+		CCCD769B1757814600A12C44 /* button-location-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76851757814600A12C44 /* button-location-normal@2x.png */; };
+		CCCD769C1757814600A12C44 /* icon-add-location.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76861757814600A12C44 /* icon-add-location.png */; };
+		CCCD769D1757814600A12C44 /* icon-add-location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76871757814600A12C44 /* icon-add-location@2x.png */; };
+		CCCD769E1757814600A12C44 /* icon-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76881757814600A12C44 /* icon-clock.png */; };
+		CCCD769F1757814600A12C44 /* icon-clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76891757814600A12C44 /* icon-clock@2x.png */; };
+		CCCD76A01757814600A12C44 /* icon-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD768A1757814600A12C44 /* icon-rain.png */; };
+		CCCD76A11757814600A12C44 /* icon-rain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD768B1757814600A12C44 /* icon-rain@2x.png */; };
+		CCCD76A21757814600A12C44 /* icon-wind.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD768C1757814600A12C44 /* icon-wind.png */; };
+		CCCD76A31757814600A12C44 /* icon-wind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD768D1757814600A12C44 /* icon-wind@2x.png */; };
+		CCCD76A61757819100A12C44 /* button-refresh-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76A41757819100A12C44 /* button-refresh-normal.png */; };
+		CCCD76A71757819100A12C44 /* button-refresh-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76A51757819100A12C44 /* button-refresh-normal@2x.png */; };
+		CCCD76AB1757857000A12C44 /* NSUserDefaults+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD76AA1757857000A12C44 /* NSUserDefaults+Helpers.m */; };
+		CCCD76AE175786BA00A12C44 /* MTSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD76AD175786BA00A12C44 /* MTSettings.m */; };
+		CCCD76B21757882900A12C44 /* MTHourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD76B11757882900A12C44 /* MTHourCell.m */; };
+		CCCD76B517578A5200A12C44 /* MTDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD76B417578A5200A12C44 /* MTDayCell.m */; };
+		CCCD76B817578D2700A12C44 /* MTLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCD76B717578D2700A12C44 /* MTLocationCell.m */; };
+		CCCD76BA175791E700A12C44 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76B9175791E700A12C44 /* Default.png */; };
+		CCCD76BC175791ED00A12C44 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76BB175791EC00A12C44 /* Default@2x.png */; };
+		CCCD76BE175791F000A12C44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCD76BD175791F000A12C44 /* Default-568h@2x.png */; };
+		EEE723F4A3AF4DA38F5C3A8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7986A9020A0B48A19C99D260 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A0AA090174B9D4E005D739E /* Rain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rain.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A0AA093174B9D4E005D739E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0A0AA095174B9D4E005D739E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0A0AA097174B9D4E005D739E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0A0AA09B174B9D4E005D739E /* Rain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rain-Info.plist"; sourceTree = "<group>"; };
-		0A0AA09D174B9D4E005D739E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A0AA09F174B9D4E005D739E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A0AA0A1174B9D4E005D739E /* Rain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rain-Prefix.pch"; sourceTree = "<group>"; };
-		0A0AA0A2174B9D4E005D739E /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
-		0A0AA0A3174B9D4E005D739E /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
-		0A0AA0A5174B9D4E005D739E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		0A0AA0A7174B9D4E005D739E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		0A0AA0A9174B9D4E005D739E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0A0AA0B0174B9D61005D739E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		0A0AA0B2174BA2B2005D739E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0A0AA0B4174BA6B1005D739E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		0A0AA0B6174BA6B8005D739E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0A0AA0B8174BA6C0005D739E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0A0AA0BA174BA6CA005D739E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		0A0AA0C0174BA957005D739E /* MTWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWeatherViewController.h; sourceTree = "<group>"; };
-		0A0AA0C1174BA957005D739E /* MTWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWeatherViewController.m; sourceTree = "<group>"; };
-		0A0AA0C2174BA957005D739E /* MTWeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTWeatherViewController.xib; sourceTree = "<group>"; };
-		0A0AA0C5174BA975005D739E /* MTForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTForecastViewController.h; sourceTree = "<group>"; };
-		0A0AA0C6174BA975005D739E /* MTForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTForecastViewController.m; sourceTree = "<group>"; };
-		0A0AA0C7174BA975005D739E /* MTForecastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTForecastViewController.xib; sourceTree = "<group>"; };
-		0A0AA0CA174BA989005D739E /* MTLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLocationViewController.h; sourceTree = "<group>"; };
-		0A0AA0CB174BA989005D739E /* MTLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLocationViewController.m; sourceTree = "<group>"; };
-		0A0AA0CC174BA989005D739E /* MTLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLocationViewController.xib; sourceTree = "<group>"; };
-		0A0AA0CF174BB447005D739E /* MTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConstants.h; sourceTree = "<group>"; };
-		0A0AA0D0174BB447005D739E /* MTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConstants.m; sourceTree = "<group>"; };
-		0A0AA0DA174C4EE4005D739E /* MTForecastClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTForecastClient.h; sourceTree = "<group>"; };
-		0A0AA0DB174C4EE4005D739E /* MTForecastClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTForecastClient.m; sourceTree = "<group>"; };
-		6E8B692B9CC04803AF20BF53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBC81EAC2B6E45BBA38B249A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		49D383935F7A41279A020327 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		7986A9020A0B48A19C99D260 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9D2B42173D616300492230 /* Rain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9D2B45173D616300492230 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CC9D2B47173D616300492230 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC9D2B49173D616300492230 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CC9D2B4D173D616300492230 /* Rain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rain-Info.plist"; sourceTree = "<group>"; };
+		CC9D2B4F173D616300492230 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC9D2B51173D616300492230 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC9D2B53173D616300492230 /* Rain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rain-Prefix.pch"; sourceTree = "<group>"; };
+		CC9D2B54173D616300492230 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		CC9D2B55173D616300492230 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		CC9D2B62173D636E00492230 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CC9D2B64173D637200492230 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CC9D2B66173D637700492230 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CC9D2B68173D637C00492230 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC9D2B6C173D662A00492230 /* MTWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTWeatherViewController.h; sourceTree = "<group>"; };
+		CC9D2B6D173D662A00492230 /* MTWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTWeatherViewController.m; sourceTree = "<group>"; };
+		CC9D2B71173D663600492230 /* MTForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTForecastViewController.h; sourceTree = "<group>"; };
+		CC9D2B72173D663600492230 /* MTForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTForecastViewController.m; sourceTree = "<group>"; };
+		CC9D2B73173D663600492230 /* MTForecastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTForecastViewController.xib; sourceTree = "<group>"; };
+		CC9D2B76173D664100492230 /* MTLocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLocationsViewController.h; sourceTree = "<group>"; };
+		CC9D2B77173D664100492230 /* MTLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLocationsViewController.m; sourceTree = "<group>"; };
+		CC9D2B78173D664100492230 /* MTLocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTLocationsViewController.xib; sourceTree = "<group>"; };
+		CC9D2B7C173D721E00492230 /* MTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConstants.h; sourceTree = "<group>"; };
+		CC9D2B7D173D721E00492230 /* MTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConstants.m; sourceTree = "<group>"; };
+		CCB3F7C91747768300600FDC /* MTForecastClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTForecastClient.h; sourceTree = "<group>"; };
+		CCB3F7CA1747768300600FDC /* MTForecastClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTForecastClient.m; sourceTree = "<group>"; };
+		CCCD76751757812600A12C44 /* MTWeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTWeatherViewController.xib; sourceTree = "<group>"; };
+		CCCD76781757814600A12C44 /* background-add-location-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-add-location-cell.png"; sourceTree = "<group>"; };
+		CCCD76791757814600A12C44 /* background-add-location-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-add-location-cell@2x.png"; sourceTree = "<group>"; };
+		CCCD767A1757814600A12C44 /* background-calendar-day-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-calendar-day-cell.png"; sourceTree = "<group>"; };
+		CCCD767B1757814600A12C44 /* background-calendar-day-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-calendar-day-cell@2x.png"; sourceTree = "<group>"; };
+		CCCD767C1757814600A12C44 /* background-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-center.png"; sourceTree = "<group>"; };
+		CCCD767D1757814600A12C44 /* background-center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-center@2x.png"; sourceTree = "<group>"; };
+		CCCD767E1757814600A12C44 /* background-hour-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-hour-cell.png"; sourceTree = "<group>"; };
+		CCCD767F1757814600A12C44 /* background-hour-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-hour-cell@2x.png"; sourceTree = "<group>"; };
+		CCCD76801757814600A12C44 /* background-location-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-location-cell.png"; sourceTree = "<group>"; };
+		CCCD76811757814600A12C44 /* background-location-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-location-cell@2x.png"; sourceTree = "<group>"; };
+		CCCD76821757814600A12C44 /* button-delete-location-cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-delete-location-cell.png"; sourceTree = "<group>"; };
+		CCCD76831757814600A12C44 /* button-delete-location-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-delete-location-cell@2x.png"; sourceTree = "<group>"; };
+		CCCD76841757814600A12C44 /* button-location-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-location-normal.png"; sourceTree = "<group>"; };
+		CCCD76851757814600A12C44 /* button-location-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-location-normal@2x.png"; sourceTree = "<group>"; };
+		CCCD76861757814600A12C44 /* icon-add-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-add-location.png"; sourceTree = "<group>"; };
+		CCCD76871757814600A12C44 /* icon-add-location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-add-location@2x.png"; sourceTree = "<group>"; };
+		CCCD76881757814600A12C44 /* icon-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-clock.png"; sourceTree = "<group>"; };
+		CCCD76891757814600A12C44 /* icon-clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-clock@2x.png"; sourceTree = "<group>"; };
+		CCCD768A1757814600A12C44 /* icon-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-rain.png"; sourceTree = "<group>"; };
+		CCCD768B1757814600A12C44 /* icon-rain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-rain@2x.png"; sourceTree = "<group>"; };
+		CCCD768C1757814600A12C44 /* icon-wind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-wind.png"; sourceTree = "<group>"; };
+		CCCD768D1757814600A12C44 /* icon-wind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-wind@2x.png"; sourceTree = "<group>"; };
+		CCCD76A41757819100A12C44 /* button-refresh-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-refresh-normal.png"; sourceTree = "<group>"; };
+		CCCD76A51757819100A12C44 /* button-refresh-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-refresh-normal@2x.png"; sourceTree = "<group>"; };
+		CCCD76A91757857000A12C44 /* NSUserDefaults+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Helpers.h"; sourceTree = "<group>"; };
+		CCCD76AA1757857000A12C44 /* NSUserDefaults+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Helpers.m"; sourceTree = "<group>"; };
+		CCCD76AC175786BA00A12C44 /* MTSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSettings.h; sourceTree = "<group>"; };
+		CCCD76AD175786BA00A12C44 /* MTSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSettings.m; sourceTree = "<group>"; };
+		CCCD76B01757882900A12C44 /* MTHourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHourCell.h; sourceTree = "<group>"; };
+		CCCD76B11757882900A12C44 /* MTHourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHourCell.m; sourceTree = "<group>"; };
+		CCCD76B317578A5200A12C44 /* MTDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDayCell.h; sourceTree = "<group>"; };
+		CCCD76B417578A5200A12C44 /* MTDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDayCell.m; sourceTree = "<group>"; };
+		CCCD76B617578D2700A12C44 /* MTLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLocationCell.h; sourceTree = "<group>"; };
+		CCCD76B717578D2700A12C44 /* MTLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLocationCell.m; sourceTree = "<group>"; };
+		CCCD76B9175791E700A12C44 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		CCCD76BB175791EC00A12C44 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		CCCD76BD175791F000A12C44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A0AA08D174B9D4E005D739E /* Frameworks */ = {
+		CC9D2B3F173D616300492230 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0AA0BF174BA6EE005D739E /* MobileCoreServices.framework in Frameworks */,
-				0A0AA0BE174BA6E8005D739E /* SystemConfiguration.framework in Frameworks */,
-				0A0AA0BD174BA6E2005D739E /* QuartzCore.framework in Frameworks */,
-				0A0AA0BC174BA6DD005D739E /* CoreLocation.framework in Frameworks */,
-				0A0AA094174B9D4E005D739E /* UIKit.framework in Frameworks */,
-				0A0AA096174B9D4E005D739E /* Foundation.framework in Frameworks */,
-				0A0AA098174B9D4E005D739E /* CoreGraphics.framework in Frameworks */,
-				242F2F577AAF455EBB616235 /* libPods.a in Frameworks */,
+				CC9D2B69173D637C00492230 /* QuartzCore.framework in Frameworks */,
+				CC9D2B67173D637700492230 /* CoreLocation.framework in Frameworks */,
+				CC9D2B65173D637200492230 /* MobileCoreServices.framework in Frameworks */,
+				CC9D2B63173D636E00492230 /* SystemConfiguration.framework in Frameworks */,
+				CC9D2B46173D616300492230 /* UIKit.framework in Frameworks */,
+				CC9D2B48173D616300492230 /* Foundation.framework in Frameworks */,
+				CC9D2B4A173D616300492230 /* CoreGraphics.framework in Frameworks */,
+				EEE723F4A3AF4DA38F5C3A8B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A0AA087174B9D4D005D739E = {
+		CC9D2B39173D616300492230 = {
 			isa = PBXGroup;
 			children = (
-				0A0AA0B2174BA2B2005D739E /* Podfile */,
-				0A0AA0B0174B9D61005D739E /* README.md */,
-				0A0AA099174B9D4E005D739E /* Rain */,
-				0A0AA092174B9D4E005D739E /* Frameworks */,
-				0A0AA091174B9D4E005D739E /* Products */,
-				BBC81EAC2B6E45BBA38B249A /* Pods.xcconfig */,
+				CC9D2B4B173D616300492230 /* Rain */,
+				CC9D2B44173D616300492230 /* Frameworks */,
+				CC9D2B43173D616300492230 /* Products */,
+				49D383935F7A41279A020327 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		0A0AA091174B9D4E005D739E /* Products */ = {
+		CC9D2B43173D616300492230 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A0AA090174B9D4E005D739E /* Rain.app */,
+				CC9D2B42173D616300492230 /* Rain.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A0AA092174B9D4E005D739E /* Frameworks */ = {
+		CC9D2B44173D616300492230 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A0AA0BA174BA6CA005D739E /* CoreLocation.framework */,
-				0A0AA0B8174BA6C0005D739E /* QuartzCore.framework */,
-				0A0AA0B6174BA6B8005D739E /* SystemConfiguration.framework */,
-				0A0AA0B4174BA6B1005D739E /* MobileCoreServices.framework */,
-				0A0AA093174B9D4E005D739E /* UIKit.framework */,
-				0A0AA095174B9D4E005D739E /* Foundation.framework */,
-				0A0AA097174B9D4E005D739E /* CoreGraphics.framework */,
-				6E8B692B9CC04803AF20BF53 /* libPods.a */,
+				CC9D2B68173D637C00492230 /* QuartzCore.framework */,
+				CC9D2B66173D637700492230 /* CoreLocation.framework */,
+				CC9D2B64173D637200492230 /* MobileCoreServices.framework */,
+				CC9D2B62173D636E00492230 /* SystemConfiguration.framework */,
+				CC9D2B45173D616300492230 /* UIKit.framework */,
+				CC9D2B47173D616300492230 /* Foundation.framework */,
+				CC9D2B49173D616300492230 /* CoreGraphics.framework */,
+				7986A9020A0B48A19C99D260 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A0AA099174B9D4E005D739E /* Rain */ = {
+		CC9D2B4B173D616300492230 /* Rain */ = {
 			isa = PBXGroup;
 			children = (
-				0A0AA0A2174B9D4E005D739E /* MTAppDelegate.h */,
-				0A0AA0A3174B9D4E005D739E /* MTAppDelegate.m */,
-				0A0AA09A174B9D4E005D739E /* Supporting Files */,
-				0A0AA0C0174BA957005D739E /* MTWeatherViewController.h */,
-				0A0AA0C1174BA957005D739E /* MTWeatherViewController.m */,
-				0A0AA0C2174BA957005D739E /* MTWeatherViewController.xib */,
-				0A0AA0C5174BA975005D739E /* MTForecastViewController.h */,
-				0A0AA0C6174BA975005D739E /* MTForecastViewController.m */,
-				0A0AA0C7174BA975005D739E /* MTForecastViewController.xib */,
-				0A0AA0CA174BA989005D739E /* MTLocationViewController.h */,
-				0A0AA0CB174BA989005D739E /* MTLocationViewController.m */,
-				0A0AA0CC174BA989005D739E /* MTLocationViewController.xib */,
-				0A0AA0CF174BB447005D739E /* MTConstants.h */,
-				0A0AA0D0174BB447005D739E /* MTConstants.m */,
-				0A0AA0DA174C4EE4005D739E /* MTForecastClient.h */,
-				0A0AA0DB174C4EE4005D739E /* MTForecastClient.m */,
+				CCCD76A81757855100A12C44 /* Categories */,
+				CC9D2B7B173D720B00492230 /* Miscellaneous */,
+				CC9D2B6A173D660B00492230 /* Application Delegate */,
+				CC9D2B6B173D661300492230 /* View Controllers */,
+				CCCD76AF1757880C00A12C44 /* UIKit */,
+				CCCD76771757813000A12C44 /* Artwork */,
+				CCCD76BF175791FD00A12C44 /* Launch Images */,
+				CC9D2B4C173D616300492230 /* Supporting Files */,
 			);
 			path = Rain;
 			sourceTree = "<group>";
 		};
-		0A0AA09A174B9D4E005D739E /* Supporting Files */ = {
+		CC9D2B4C173D616300492230 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A0AA09B174B9D4E005D739E /* Rain-Info.plist */,
-				0A0AA09C174B9D4E005D739E /* InfoPlist.strings */,
-				0A0AA09F174B9D4E005D739E /* main.m */,
-				0A0AA0A1174B9D4E005D739E /* Rain-Prefix.pch */,
-				0A0AA0A5174B9D4E005D739E /* Default.png */,
-				0A0AA0A7174B9D4E005D739E /* Default@2x.png */,
-				0A0AA0A9174B9D4E005D739E /* Default-568h@2x.png */,
+				CC9D2B4D173D616300492230 /* Rain-Info.plist */,
+				CC9D2B4E173D616300492230 /* InfoPlist.strings */,
+				CC9D2B51173D616300492230 /* main.m */,
+				CC9D2B53173D616300492230 /* Rain-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC9D2B6A173D660B00492230 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CC9D2B54173D616300492230 /* MTAppDelegate.h */,
+				CC9D2B55173D616300492230 /* MTAppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		CC9D2B6B173D661300492230 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC9D2B6C173D662A00492230 /* MTWeatherViewController.h */,
+				CC9D2B6D173D662A00492230 /* MTWeatherViewController.m */,
+				CCCD76751757812600A12C44 /* MTWeatherViewController.xib */,
+				CC9D2B71173D663600492230 /* MTForecastViewController.h */,
+				CC9D2B72173D663600492230 /* MTForecastViewController.m */,
+				CC9D2B73173D663600492230 /* MTForecastViewController.xib */,
+				CC9D2B76173D664100492230 /* MTLocationsViewController.h */,
+				CC9D2B77173D664100492230 /* MTLocationsViewController.m */,
+				CC9D2B78173D664100492230 /* MTLocationsViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CC9D2B7B173D720B00492230 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD76AC175786BA00A12C44 /* MTSettings.h */,
+				CCCD76AD175786BA00A12C44 /* MTSettings.m */,
+				CC9D2B7C173D721E00492230 /* MTConstants.h */,
+				CC9D2B7D173D721E00492230 /* MTConstants.m */,
+				CCB3F7C91747768300600FDC /* MTForecastClient.h */,
+				CCB3F7CA1747768300600FDC /* MTForecastClient.m */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		CCCD76771757813000A12C44 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD76781757814600A12C44 /* background-add-location-cell.png */,
+				CCCD76791757814600A12C44 /* background-add-location-cell@2x.png */,
+				CCCD767A1757814600A12C44 /* background-calendar-day-cell.png */,
+				CCCD767B1757814600A12C44 /* background-calendar-day-cell@2x.png */,
+				CCCD767C1757814600A12C44 /* background-center.png */,
+				CCCD767D1757814600A12C44 /* background-center@2x.png */,
+				CCCD767E1757814600A12C44 /* background-hour-cell.png */,
+				CCCD767F1757814600A12C44 /* background-hour-cell@2x.png */,
+				CCCD76801757814600A12C44 /* background-location-cell.png */,
+				CCCD76811757814600A12C44 /* background-location-cell@2x.png */,
+				CCCD76821757814600A12C44 /* button-delete-location-cell.png */,
+				CCCD76831757814600A12C44 /* button-delete-location-cell@2x.png */,
+				CCCD76841757814600A12C44 /* button-location-normal.png */,
+				CCCD76851757814600A12C44 /* button-location-normal@2x.png */,
+				CCCD76A41757819100A12C44 /* button-refresh-normal.png */,
+				CCCD76A51757819100A12C44 /* button-refresh-normal@2x.png */,
+				CCCD76861757814600A12C44 /* icon-add-location.png */,
+				CCCD76871757814600A12C44 /* icon-add-location@2x.png */,
+				CCCD76881757814600A12C44 /* icon-clock.png */,
+				CCCD76891757814600A12C44 /* icon-clock@2x.png */,
+				CCCD768A1757814600A12C44 /* icon-rain.png */,
+				CCCD768B1757814600A12C44 /* icon-rain@2x.png */,
+				CCCD768C1757814600A12C44 /* icon-wind.png */,
+				CCCD768D1757814600A12C44 /* icon-wind@2x.png */,
+			);
+			name = Artwork;
+			sourceTree = "<group>";
+		};
+		CCCD76A81757855100A12C44 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD76A91757857000A12C44 /* NSUserDefaults+Helpers.h */,
+				CCCD76AA1757857000A12C44 /* NSUserDefaults+Helpers.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CCCD76AF1757880C00A12C44 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD76B01757882900A12C44 /* MTHourCell.h */,
+				CCCD76B11757882900A12C44 /* MTHourCell.m */,
+				CCCD76B317578A5200A12C44 /* MTDayCell.h */,
+				CCCD76B417578A5200A12C44 /* MTDayCell.m */,
+				CCCD76B617578D2700A12C44 /* MTLocationCell.h */,
+				CCCD76B717578D2700A12C44 /* MTLocationCell.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		CCCD76BF175791FD00A12C44 /* Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				CCCD76B9175791E700A12C44 /* Default.png */,
+				CCCD76BB175791EC00A12C44 /* Default@2x.png */,
+				CCCD76BD175791F000A12C44 /* Default-568h@2x.png */,
+			);
+			name = "Launch Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A0AA08F174B9D4E005D739E /* Rain */ = {
+		CC9D2B41173D616300492230 /* Rain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A0AA0AD174B9D4E005D739E /* Build configuration list for PBXNativeTarget "Rain" */;
+			buildConfigurationList = CC9D2B5F173D616300492230 /* Build configuration list for PBXNativeTarget "Rain" */;
 			buildPhases = (
-				FD728688E72543E5A9696B91 /* Check Pods Manifest.lock */,
-				0A0AA08C174B9D4E005D739E /* Sources */,
-				0A0AA08D174B9D4E005D739E /* Frameworks */,
-				0A0AA08E174B9D4E005D739E /* Resources */,
-				7820378D889E4111B16D166B /* Copy Pods Resources */,
+				3A9721046B0D4A40BEEB9BF1 /* Check Pods Manifest.lock */,
+				CC9D2B3E173D616300492230 /* Sources */,
+				CC9D2B3F173D616300492230 /* Frameworks */,
+				CC9D2B40173D616300492230 /* Resources */,
+				F7ED4532F04A4905AB104EDD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,57 +327,93 @@
 			);
 			name = Rain;
 			productName = Rain;
-			productReference = 0A0AA090174B9D4E005D739E /* Rain.app */;
+			productReference = CC9D2B42173D616300492230 /* Rain.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0A0AA088174B9D4D005D739E /* Project object */ = {
+		CC9D2B3A173D616300492230 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MT;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Kevin;
+				ORGANIZATIONNAME = "Mobile Tuts";
 			};
-			buildConfigurationList = 0A0AA08B174B9D4D005D739E /* Build configuration list for PBXProject "Rain" */;
+			buildConfigurationList = CC9D2B3D173D616300492230 /* Build configuration list for PBXProject "Rain" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0A0AA087174B9D4D005D739E;
-			productRefGroup = 0A0AA091174B9D4E005D739E /* Products */;
+			mainGroup = CC9D2B39173D616300492230;
+			productRefGroup = CC9D2B43173D616300492230 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A0AA08F174B9D4E005D739E /* Rain */,
+				CC9D2B41173D616300492230 /* Rain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A0AA08E174B9D4E005D739E /* Resources */ = {
+		CC9D2B40173D616300492230 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0AA09E174B9D4E005D739E /* InfoPlist.strings in Resources */,
-				0A0AA0A6174B9D4E005D739E /* Default.png in Resources */,
-				0A0AA0A8174B9D4E005D739E /* Default@2x.png in Resources */,
-				0A0AA0AA174B9D4E005D739E /* Default-568h@2x.png in Resources */,
-				0A0AA0B1174B9D61005D739E /* README.md in Resources */,
-				0A0AA0B3174BA2B2005D739E /* Podfile in Resources */,
-				0A0AA0C4174BA957005D739E /* MTWeatherViewController.xib in Resources */,
-				0A0AA0C9174BA975005D739E /* MTForecastViewController.xib in Resources */,
-				0A0AA0CE174BA989005D739E /* MTLocationViewController.xib in Resources */,
+				CC9D2B50173D616300492230 /* InfoPlist.strings in Resources */,
+				CC9D2B75173D663600492230 /* MTForecastViewController.xib in Resources */,
+				CC9D2B7A173D664100492230 /* MTLocationsViewController.xib in Resources */,
+				CCCD76761757812600A12C44 /* MTWeatherViewController.xib in Resources */,
+				CCCD768E1757814600A12C44 /* background-add-location-cell.png in Resources */,
+				CCCD768F1757814600A12C44 /* background-add-location-cell@2x.png in Resources */,
+				CCCD76901757814600A12C44 /* background-calendar-day-cell.png in Resources */,
+				CCCD76911757814600A12C44 /* background-calendar-day-cell@2x.png in Resources */,
+				CCCD76921757814600A12C44 /* background-center.png in Resources */,
+				CCCD76931757814600A12C44 /* background-center@2x.png in Resources */,
+				CCCD76941757814600A12C44 /* background-hour-cell.png in Resources */,
+				CCCD76951757814600A12C44 /* background-hour-cell@2x.png in Resources */,
+				CCCD76961757814600A12C44 /* background-location-cell.png in Resources */,
+				CCCD76971757814600A12C44 /* background-location-cell@2x.png in Resources */,
+				CCCD76981757814600A12C44 /* button-delete-location-cell.png in Resources */,
+				CCCD76991757814600A12C44 /* button-delete-location-cell@2x.png in Resources */,
+				CCCD769A1757814600A12C44 /* button-location-normal.png in Resources */,
+				CCCD769B1757814600A12C44 /* button-location-normal@2x.png in Resources */,
+				CCCD769C1757814600A12C44 /* icon-add-location.png in Resources */,
+				CCCD769D1757814600A12C44 /* icon-add-location@2x.png in Resources */,
+				CCCD769E1757814600A12C44 /* icon-clock.png in Resources */,
+				CCCD769F1757814600A12C44 /* icon-clock@2x.png in Resources */,
+				CCCD76A01757814600A12C44 /* icon-rain.png in Resources */,
+				CCCD76A11757814600A12C44 /* icon-rain@2x.png in Resources */,
+				CCCD76A21757814600A12C44 /* icon-wind.png in Resources */,
+				CCCD76A31757814600A12C44 /* icon-wind@2x.png in Resources */,
+				CCCD76A61757819100A12C44 /* button-refresh-normal.png in Resources */,
+				CCCD76A71757819100A12C44 /* button-refresh-normal@2x.png in Resources */,
+				CCCD76BA175791E700A12C44 /* Default.png in Resources */,
+				CCCD76BC175791ED00A12C44 /* Default@2x.png in Resources */,
+				CCCD76BE175791F000A12C44 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7820378D889E4111B16D166B /* Copy Pods Resources */ = {
+		3A9721046B0D4A40BEEB9BF1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		F7ED4532F04A4905AB104EDD /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,44 +427,35 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
-		FD728688E72543E5A9696B91 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A0AA08C174B9D4E005D739E /* Sources */ = {
+		CC9D2B3E173D616300492230 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0AA0A0174B9D4E005D739E /* main.m in Sources */,
-				0A0AA0A4174B9D4E005D739E /* MTAppDelegate.m in Sources */,
-				0A0AA0C3174BA957005D739E /* MTWeatherViewController.m in Sources */,
-				0A0AA0C8174BA975005D739E /* MTForecastViewController.m in Sources */,
-				0A0AA0CD174BA989005D739E /* MTLocationViewController.m in Sources */,
-				0A0AA0D1174BB447005D739E /* MTConstants.m in Sources */,
-				0A0AA0DC174C4EE4005D739E /* MTForecastClient.m in Sources */,
+				CC9D2B52173D616300492230 /* main.m in Sources */,
+				CC9D2B56173D616300492230 /* MTAppDelegate.m in Sources */,
+				CC9D2B6F173D662A00492230 /* MTWeatherViewController.m in Sources */,
+				CC9D2B74173D663600492230 /* MTForecastViewController.m in Sources */,
+				CC9D2B79173D664100492230 /* MTLocationsViewController.m in Sources */,
+				CC9D2B7E173D721E00492230 /* MTConstants.m in Sources */,
+				CCB3F7CB1747768300600FDC /* MTForecastClient.m in Sources */,
+				CCCD76AB1757857000A12C44 /* NSUserDefaults+Helpers.m in Sources */,
+				CCCD76AE175786BA00A12C44 /* MTSettings.m in Sources */,
+				CCCD76B21757882900A12C44 /* MTHourCell.m in Sources */,
+				CCCD76B517578A5200A12C44 /* MTDayCell.m in Sources */,
+				CCCD76B817578D2700A12C44 /* MTLocationCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A0AA09C174B9D4E005D739E /* InfoPlist.strings */ = {
+		CC9D2B4E173D616300492230 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A0AA09D174B9D4E005D739E /* en */,
+				CC9D2B4F173D616300492230 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -289,7 +463,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0A0AA0AB174B9D4E005D739E /* Debug */ = {
+		CC9D2B5D173D616300492230 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,7 +494,7 @@
 			};
 			name = Debug;
 		};
-		0A0AA0AC174B9D4E005D739E /* Release */ = {
+		CC9D2B5E173D616300492230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,9 +519,9 @@
 			};
 			name = Release;
 		};
-		0A0AA0AE174B9D4E005D739E /* Debug */ = {
+		CC9D2B60173D616300492230 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC81EAC2B6E45BBA38B249A /* Pods.xcconfig */;
+			baseConfigurationReference = 49D383935F7A41279A020327 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rain/Rain-Prefix.pch";
@@ -357,9 +531,9 @@
 			};
 			name = Debug;
 		};
-		0A0AA0AF174B9D4E005D739E /* Release */ = {
+		CC9D2B61173D616300492230 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC81EAC2B6E45BBA38B249A /* Pods.xcconfig */;
+			baseConfigurationReference = 49D383935F7A41279A020327 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Rain/Rain-Prefix.pch";
@@ -372,25 +546,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A0AA08B174B9D4D005D739E /* Build configuration list for PBXProject "Rain" */ = {
+		CC9D2B3D173D616300492230 /* Build configuration list for PBXProject "Rain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A0AA0AB174B9D4E005D739E /* Debug */,
-				0A0AA0AC174B9D4E005D739E /* Release */,
+				CC9D2B5D173D616300492230 /* Debug */,
+				CC9D2B5E173D616300492230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A0AA0AD174B9D4E005D739E /* Build configuration list for PBXNativeTarget "Rain" */ = {
+		CC9D2B5F173D616300492230 /* Build configuration list for PBXNativeTarget "Rain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A0AA0AE174B9D4E005D739E /* Debug */,
-				0A0AA0AF174B9D4E005D739E /* Release */,
+				CC9D2B60173D616300492230 /* Debug */,
+				CC9D2B61173D616300492230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0A0AA088174B9D4D005D739E /* Project object */;
+	rootObject = CC9D2B3A173D616300492230 /* Project object */;
 }

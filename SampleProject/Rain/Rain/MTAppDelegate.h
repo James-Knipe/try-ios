@@ -2,8 +2,8 @@
 //  MTAppDelegate.h
 //  Rain
 //
-//  Created by Kevin on 5/21/13.
-//  Copyright (c) 2013 Kevin. All rights reserved.
+//  Created by Bart Jacobs on 10/05/13.
+//  Copyright (c) 2013 Mobile Tuts. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

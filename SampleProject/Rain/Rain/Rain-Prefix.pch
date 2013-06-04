@@ -15,8 +15,11 @@
     #import <CoreLocation/CoreLocation.h>
     #import <MobileCoreServices/MobileCoreServices.h>
     #import <SystemConfiguration/SystemConfiguration.h>
-    #import <AFNetworking/AFNetworking.h>
-    #import <SVProgressHUD/SVProgressHUD.h>
-    #import <IIViewDeckController.h>
+
+    #import "AFNetworking.h"
+    #import "SVProgressHUD.h"
+    #import "IIViewDeckController.h"
+
+    #import "MTSettings.h"
     #import "MTConstants.h"
 #endif
