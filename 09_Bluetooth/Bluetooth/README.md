@@ -1,0 +1,1 @@
+http://www.pocketmagic.net/2012/07/bluetooth-and-ios-use-bluetooth-in-your-iphone-apps/#.Ucpffz7N9Q8

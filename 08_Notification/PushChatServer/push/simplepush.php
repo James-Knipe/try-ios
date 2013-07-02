@@ -2,10 +2,10 @@
 // A simple APNS demo
 
 // Put your device token here (without spaces):
-$deviceToken = '985482672f2cc57659200508fdd952a8a7a7c5d616776348e8de494bf7a19685';
+$deviceToken = 'f917ec02cf4eca9e765eba06f57a586fdb87897f8c5127d74d14a0b72c936bdd';
 
 // Put your private key's passphrase here:
-$passphrase = 'PushChat';
+$passphrase = '';
 
 // Put your alert message here:
 $message = 'Kevin: My first push notification!';

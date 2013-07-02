@@ -1,0 +1,25 @@
+PODS:
+  - ASIHTTPRequest (1.8.1):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/S3
+    - Reachability
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/CloudFiles (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.1):
+    - Reachability
+  - Reachability (3.1.0)
+  - TouchJSON (1.1)
+
+DEPENDENCIES:
+  - ASIHTTPRequest (~> 1.8.1)
+  - TouchJSON (~> 1.1)
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: a411b8d0f006ed8fc24248be6a0c4ad2abc9b101
+  Reachability: ba94ecd4eaa037be3d0588b38956672588530c5b
+  TouchJSON: 9e53f4df141b7f972766292b00b46bccf29f179a
+
+COCOAPODS: 0.20.2

@@ -1,7 +1,13 @@
 Study iOS Development 
 ===================
 
-# 2013-05-24
+# 2013-07-02
+> * Core Data on iOS 5 Tutorial: Getting Started
+
+# 2013-06-04 
+> * Create a Weather App with Forecast – User Interface
+
+# 2013-05-25
 > * Learn Apple Push Notification and Learn Web implementation.
 
 # 2013-05-24
