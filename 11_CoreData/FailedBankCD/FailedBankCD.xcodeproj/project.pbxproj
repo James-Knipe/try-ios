@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A47AFE61783CF3000422403 /* CoreDataTutorial2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0A47AFE51783CF3000422403 /* CoreDataTutorial2.sqlite */; };
 		0AB43919178302C000765B66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB43918178302C000765B66 /* UIKit.framework */; };
 		0AB4391B178302C000765B66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB4391A178302C000765B66 /* Foundation.framework */; };
 		0AB4391D178302C000765B66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB4391C178302C000765B66 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A47AFE51783CF3000422403 /* CoreDataTutorial2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = CoreDataTutorial2.sqlite; path = FailedBankCD/CoreDataTutorial2.sqlite; sourceTree = "<group>"; };
 		0AB43915178302C000765B66 /* FailedBankCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FailedBankCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB43918178302C000765B66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AB4391A178302C000765B66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +71,7 @@
 		0AB4390C178302C000765B66 = {
 			isa = PBXGroup;
 			children = (
+				0A47AFE51783CF3000422403 /* CoreDataTutorial2.sqlite */,
 				0AB4394F17831CA200765B66 /* README.md */,
 				0AB43920178302C000765B66 /* FailedBankCD */,
 				0AB43917178302C000765B66 /* Frameworks */,
@@ -185,6 +188,7 @@
 				0AB43931178302C000765B66 /* Default-568h@2x.png in Resources */,
 				0AB43934178302C000765B66 /* MainStoryboard.storyboard in Resources */,
 				0AB4395017831CA200765B66 /* README.md in Resources */,
+				0A47AFE61783CF3000422403 /* CoreDataTutorial2.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 				0AB43942178302C000765B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,6 +1,9 @@
 Study iOS Development 
 ===================
 
+# 2013-07-03
+> * Core Data on iOS 5 Tutorial: How To Preload and Import Existing Data
+
 # 2013-07-02
 > * Core Data on iOS 5 Tutorial: Getting Started
 

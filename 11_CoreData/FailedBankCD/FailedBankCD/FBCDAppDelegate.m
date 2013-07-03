@@ -134,6 +134,14 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FailedBankCD.sqlite"];
+    // Copy CoreDataTutorial2.sqlite data to FailedBankCD.sqlite
+    if(![[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]]){
+        NSURL *preloadURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CoreDataTutorial2" ofType:@"sqlite"]];
+        NSError *err = nil;
+        if(![[NSFileManager defaultManager] copyItemAtURL:preloadURL toURL:storeURL error:&err]){
+            NSLog(@"Oops, could copy preload data");
+        }
+    }
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
