@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Xkb-ye-QMk">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+    </dependencies>
+    <scenes>
+        <!--RolesTVC - Roles-->
+        <scene sceneID="Dnc-4e-3d7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qf-9S-iCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="PXZ-QE-uYR" customClass="RolesTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MAS-GM-0PU">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="7VO-k7-slh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="PXZ-QE-uYR" id="Uzc-Xq-2Gw"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Roles Cell" id="csI-kk-PC4">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="3OJ-Kc-2MH" kind="push" identifier="Role Detail Segue" id="3uz-JH-vlU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PXZ-QE-uYR" id="laG-PX-GY9"/>
+                            <outlet property="delegate" destination="PXZ-QE-uYR" id="eHE-JK-Inq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Roles" id="QmK-hL-ZS7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="B2T-cn-Usa">
+                            <connections>
+                                <segue destination="3OJ-Kc-2MH" kind="push" identifier="Add Role Segue" id="YTo-BP-3fZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Hx0-gQ-LFf" id="hW6-JL-AYw"/>
+                    </connections>
+                </tableViewController>
+                <searchDisplayController id="Hx0-gQ-LFf">
+                    <connections>
+                        <outlet property="delegate" destination="PXZ-QE-uYR" id="MwB-lX-zLy"/>
+                        <outlet property="searchBar" destination="7VO-k7-slh" id="q2I-vR-PdZ"/>
+                        <outlet property="searchContentsController" destination="PXZ-QE-uYR" id="vcf-d0-kby"/>
+                        <outlet property="searchResultsDataSource" destination="PXZ-QE-uYR" id="Rvf-Yv-YIO"/>
+                        <outlet property="searchResultsDelegate" destination="PXZ-QE-uYR" id="YVU-6q-lJM"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="971" y="-215"/>
+        </scene>
+        <!--Navigation Controller - Roles-->
+        <scene sceneID="F0b-A5-dsD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Alb-sJ-ZMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="4V4-Vi-Phu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Roles" image="37-suitcase.png" id="vfU-ia-7fW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="LaS-Nq-hDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PXZ-QE-uYR" kind="relationship" relationship="rootViewController" id="Je8-xU-b08"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="571" y="-215"/>
+        </scene>
+        <!--Role DetailTVC - Role Detail-->
+        <scene sceneID="h4K-Qp-7AS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HkW-en-0iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="3OJ-Kc-2MH" customClass="RoleDetailTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="8PI-2e-tZq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Role Name" id="lo9-qv-jnS">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="epH-k9-uWX">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="uoY-lz-WQ8">
+                                                    <rect key="frame" x="20" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="3OJ-Kc-2MH" id="xdr-l2-Fy0"/>
+                            <outlet property="delegate" destination="3OJ-Kc-2MH" id="rV2-ax-Osb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Role Detail" id="Usb-KT-dJA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yEv-Dz-1Ff">
+                            <connections>
+                                <action selector="save:" destination="3OJ-Kc-2MH" id="rVS-kp-tWV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="roleNameTextField" destination="uoY-lz-WQ8" id="OLo-to-9Vn"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1430" y="-215"/>
+        </scene>
+        <!--PersonsTVC - People-->
+        <scene sceneID="ZVq-c1-RuX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrU-a1-u99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="s1W-GZ-EJz" customClass="PersonsTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cWL-js-jmo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Persons Cell" textLabel="d2N-gJ-alt" detailTextLabel="h9b-zF-zyU" style="IBUITableViewCellStyleSubtitle" id="qqS-TC-UyU">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d2N-gJ-alt">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h9b-zF-zyU">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="0U6-KN-VHj" kind="push" identifier="Person Detail Segue" id="JWd-7s-Jfk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="s1W-GZ-EJz" id="7KW-Oe-1cK"/>
+                            <outlet property="delegate" destination="s1W-GZ-EJz" id="xvu-WZ-0hj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="People" id="GDw-KV-9Qb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RP4-kF-eHK">
+                            <connections>
+                                <segue destination="0U6-KN-VHj" kind="push" identifier="Add Person Segue" id="D0d-7J-FiS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="971" y="-887"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tul-Da-VWT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uox-Mv-hOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController definesPresentationContext="YES" id="Xkb-ye-QMk" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="NkU-gD-gk6">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y0b-1e-WCf" kind="relationship" relationship="viewControllers" id="bVa-zn-8FS"/>
+                        <segue destination="4V4-Vi-Phu" kind="relationship" relationship="viewControllers" id="wYS-M2-luD"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="31" y="-549"/>
+        </scene>
+        <!--Navigation Controller - People-->
+        <scene sceneID="CHY-ZW-YUt">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJS-Ir-tGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="y0b-1e-WCf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="111-user.png" id="It2-Z1-Hxt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fkM-eS-gMB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s1W-GZ-EJz" kind="relationship" relationship="rootViewController" id="beC-tL-ayn"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="571" y="-887"/>
+        </scene>
+        <!--Person RoleTVC - Person's Role-->
+        <scene sceneID="ZP8-rz-A92">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDE-M4-Ooe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="FeZ-7t-Bqj" customClass="PersonRoleTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6Yb-4r-qr6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Person Role Cell" id="7eT-lf-eWY">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FeZ-7t-Bqj" id="BoO-SG-MgI"/>
+                            <outlet property="delegate" destination="FeZ-7t-Bqj" id="X75-og-IJb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Person's Role" id="tRj-uD-UvR"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1806" y="-887"/>
+        </scene>
+        <!--Person DetailTVC - Person Detail-->
+        <scene sceneID="OVz-GL-Y1Q">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U70-xv-nVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="0U6-KN-VHj" customClass="PersonDetailTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xBM-bm-rIW">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Name" id="gzG-ux-fwi">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Mbv-K7-J0N">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First" minimumFontSize="17" id="4G8-LQ-HGW">
+                                                    <rect key="frame" x="20" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="S0L-Lh-vhs">
+                                        <rect key="frame" x="0.0" y="91" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" minimumFontSize="17" id="fUr-9a-Jg8">
+                                                    <rect key="frame" x="20" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Role" id="QoD-hH-L8Q">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="E47-Sw-bGz">
+                                        <rect key="frame" x="0.0" y="182" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="FeZ-7t-Bqj" kind="push" identifier="Person Role Segue" id="Q3Z-dH-7Hd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0U6-KN-VHj" id="qWg-xB-JqT"/>
+                            <outlet property="delegate" destination="0U6-KN-VHj" id="LrW-x3-rsB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Person Detail" id="80u-XQ-nqw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ZAR-tv-zNc">
+                            <connections>
+                                <action selector="save:" destination="0U6-KN-VHj" id="ibU-Vi-QAX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="personFirstnameTextField" destination="4G8-LQ-HGW" id="CEg-YL-GfY"/>
+                        <outlet property="personRoleTableViewCell" destination="E47-Sw-bGz" id="nqq-lV-kFa"/>
+                        <outlet property="personSurnameTextField" destination="fUr-9a-Jg8" id="Slg-no-BZm"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1390" y="-887"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="111-user.png" width="24" height="21"/>
+        <image name="37-suitcase.png" width="26" height="22"/>
+    </resources>
+    <classes>
+        <class className="CoreDataTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoreDataTableViewController.h"/>
+        </class>
+        <class className="PersonDetailTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PersonDetailTVC.h"/>
+            <relationships>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="personFirstnameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="personRoleTableViewCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="personSurnameTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PersonRoleTVC" superclassName="CoreDataTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PersonRoleTVC.h"/>
+        </class>
+        <class className="PersonsTVC" superclassName="CoreDataTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PersonsTVC.h"/>
+        </class>
+        <class className="RoleDetailTVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoleDetailTVC.h"/>
+            <relationships>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="roleNameTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RolesTVC" superclassName="CoreDataTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RolesTVC.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YTo-BP-3fZ"/>
+        <segue reference="D0d-7J-FiS"/>
+    </inferredMetricsTieBreakers>
+</document>

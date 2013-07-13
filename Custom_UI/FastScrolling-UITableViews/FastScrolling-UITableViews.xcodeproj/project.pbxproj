@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC01CAA7177C8579001A912C /* KTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC01CAA6177C8579001A912C /* KTTableViewCell.m */; };
+		FC01CAA9177C8895001A912C /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC01CAA8177C8895001A912C /* placeholder@2x.png */; };
+		FCBAE0F1177C7DC40030EBED /* PLPhotoStreamAlbumIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBAE0F0177C7DC40030EBED /* PLPhotoStreamAlbumIcon@2x.png */; };
+		FCBAE0F3177C7EEE0030EBED /* feed-search-suggestion-icon-morning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBAE0F2177C7EEE0030EBED /* feed-search-suggestion-icon-morning@2x.png */; };
+		FCBAE0F5177C7FA70030EBED /* search-icon-timeline-translucent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBAE0F4177C7FA70030EBED /* search-icon-timeline-translucent@2x.png */; };
+		FCBB7EAC177A94860026B83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBB7EAB177A94860026B83E /* UIKit.framework */; };
+		FCBB7EAE177A94860026B83E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBB7EAD177A94860026B83E /* Foundation.framework */; };
+		FCBB7EB0177A94860026B83E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBB7EAF177A94860026B83E /* CoreGraphics.framework */; };
+		FCBB7EB6177A94860026B83E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCBB7EB4177A94860026B83E /* InfoPlist.strings */; };
+		FCBB7EB8177A94860026B83E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EB7177A94860026B83E /* main.m */; };
+		FCBB7EBC177A94860026B83E /* KTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EBB177A94860026B83E /* KTAppDelegate.m */; };
+		FCBB7EBE177A94860026B83E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBB7EBD177A94860026B83E /* Default.png */; };
+		FCBB7EC0177A94860026B83E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBB7EBF177A94860026B83E /* Default@2x.png */; };
+		FCBB7EC2177A94860026B83E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBB7EC1177A94860026B83E /* Default-568h@2x.png */; };
+		FCBB7EC5177A94860026B83E /* KTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EC4177A94860026B83E /* KTMasterViewController.m */; };
+		FCBB7EC8177A94860026B83E /* KTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EC7177A94860026B83E /* KTDetailViewController.m */; };
+		FCBB7ECB177A94860026B83E /* KTMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCBB7EC9177A94860026B83E /* KTMasterViewController.xib */; };
+		FCBB7ECE177A94860026B83E /* KTDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCBB7ECC177A94860026B83E /* KTDetailViewController.xib */; };
+		FCBB7ED6177BDFAE0026B83E /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7ED5177BDFAE0026B83E /* UINavigationBar+FlatUI.m */; };
+		FCBB7ED9177BE0DE0026B83E /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7ED8177BE0DE0026B83E /* UIImage+FlatUI.m */; };
+		FCBB7EDC177BE52E0026B83E /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EDB177BE52E0026B83E /* UIBarButtonItem+FlatUI.m */; };
+		FCBB7EDF177BECE70026B83E /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EDE177BECE70026B83E /* SectionHeaderView.m */; };
+		FCBB7EE1177BED4A0026B83E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBB7EE0177BED4A0026B83E /* QuartzCore.framework */; };
+		FCBB7EE4177BEDB10026B83E /* UIColor+LightAndDark.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB7EE3177BEDB10026B83E /* UIColor+LightAndDark.m */; };
+		FCE1C8AD177C83F7009B3233 /* ABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE1C8AC177C83F7009B3233 /* ABTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC01CAA5177C8579001A912C /* KTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTableViewCell.h; sourceTree = "<group>"; };
+		FC01CAA6177C8579001A912C /* KTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTableViewCell.m; sourceTree = "<group>"; };
+		FC01CAA8177C8895001A912C /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
+		FCBAE0F0177C7DC40030EBED /* PLPhotoStreamAlbumIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLPhotoStreamAlbumIcon@2x.png"; sourceTree = "<group>"; };
+		FCBAE0F2177C7EEE0030EBED /* feed-search-suggestion-icon-morning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feed-search-suggestion-icon-morning@2x.png"; sourceTree = "<group>"; };
+		FCBAE0F4177C7FA70030EBED /* search-icon-timeline-translucent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon-timeline-translucent@2x.png"; sourceTree = "<group>"; };
+		FCBB7EA8177A94860026B83E /* FastScrolling-UITableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FastScrolling-UITableViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBB7EAB177A94860026B83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCBB7EAD177A94860026B83E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCBB7EAF177A94860026B83E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCBB7EB3177A94860026B83E /* FastScrolling-UITableViews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastScrolling-UITableViews-Info.plist"; sourceTree = "<group>"; };
+		FCBB7EB5177A94860026B83E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCBB7EB7177A94860026B83E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCBB7EB9177A94860026B83E /* FastScrolling-UITableViews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastScrolling-UITableViews-Prefix.pch"; sourceTree = "<group>"; };
+		FCBB7EBA177A94860026B83E /* KTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTAppDelegate.h; sourceTree = "<group>"; };
+		FCBB7EBB177A94860026B83E /* KTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTAppDelegate.m; sourceTree = "<group>"; };
+		FCBB7EBD177A94860026B83E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FCBB7EBF177A94860026B83E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FCBB7EC1177A94860026B83E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FCBB7EC3177A94860026B83E /* KTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMasterViewController.h; sourceTree = "<group>"; };
+		FCBB7EC4177A94860026B83E /* KTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMasterViewController.m; sourceTree = "<group>"; };
+		FCBB7EC6177A94860026B83E /* KTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTDetailViewController.h; sourceTree = "<group>"; };
+		FCBB7EC7177A94860026B83E /* KTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTDetailViewController.m; sourceTree = "<group>"; };
+		FCBB7ECA177A94860026B83E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KTMasterViewController.xib; sourceTree = "<group>"; };
+		FCBB7ECD177A94860026B83E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KTDetailViewController.xib; sourceTree = "<group>"; };
+		FCBB7ED4177BDFAE0026B83E /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FlatUI.h"; sourceTree = "<group>"; };
+		FCBB7ED5177BDFAE0026B83E /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FlatUI.m"; sourceTree = "<group>"; };
+		FCBB7ED7177BE0DE0026B83E /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		FCBB7ED8177BE0DE0026B83E /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		FCBB7EDA177BE52E0026B83E /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FlatUI.h"; sourceTree = "<group>"; };
+		FCBB7EDB177BE52E0026B83E /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FlatUI.m"; sourceTree = "<group>"; };
+		FCBB7EDD177BECE70026B83E /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		FCBB7EDE177BECE70026B83E /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		FCBB7EE0177BED4A0026B83E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FCBB7EE2177BEDB10026B83E /* UIColor+LightAndDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LightAndDark.h"; sourceTree = "<group>"; };
+		FCBB7EE3177BEDB10026B83E /* UIColor+LightAndDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LightAndDark.m"; sourceTree = "<group>"; };
+		FCE1C8AB177C83F7009B3233 /* ABTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABTableViewCell.h; sourceTree = "<group>"; };
+		FCE1C8AC177C83F7009B3233 /* ABTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCBB7EA5177A94850026B83E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBB7EE1177BED4A0026B83E /* QuartzCore.framework in Frameworks */,
+				FCBB7EAC177A94860026B83E /* UIKit.framework in Frameworks */,
+				FCBB7EAE177A94860026B83E /* Foundation.framework in Frameworks */,
+				FCBB7EB0177A94860026B83E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCBB7E9F177A94850026B83E = {
+			isa = PBXGroup;
+			children = (
+				FCBB7EB1177A94860026B83E /* FastScrolling-UITableViews */,
+				FCBB7EAA177A94860026B83E /* Frameworks */,
+				FCBB7EA9177A94860026B83E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCBB7EA9177A94860026B83E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB7EA8177A94860026B83E /* FastScrolling-UITableViews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCBB7EAA177A94860026B83E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB7EE0177BED4A0026B83E /* QuartzCore.framework */,
+				FCBB7EAB177A94860026B83E /* UIKit.framework */,
+				FCBB7EAD177A94860026B83E /* Foundation.framework */,
+				FCBB7EAF177A94860026B83E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCBB7EB1177A94860026B83E /* FastScrolling-UITableViews */ = {
+			isa = PBXGroup;
+			children = (
+				FC01CAA8177C8895001A912C /* placeholder@2x.png */,
+				FCE1C8AB177C83F7009B3233 /* ABTableViewCell.h */,
+				FCE1C8AC177C83F7009B3233 /* ABTableViewCell.m */,
+				FC01CAA5177C8579001A912C /* KTTableViewCell.h */,
+				FC01CAA6177C8579001A912C /* KTTableViewCell.m */,
+				FCBAE0F4177C7FA70030EBED /* search-icon-timeline-translucent@2x.png */,
+				FCBAE0F2177C7EEE0030EBED /* feed-search-suggestion-icon-morning@2x.png */,
+				FCBAE0F0177C7DC40030EBED /* PLPhotoStreamAlbumIcon@2x.png */,
+				FCBB7EE2177BEDB10026B83E /* UIColor+LightAndDark.h */,
+				FCBB7EE3177BEDB10026B83E /* UIColor+LightAndDark.m */,
+				FCBB7EDA177BE52E0026B83E /* UIBarButtonItem+FlatUI.h */,
+				FCBB7EDB177BE52E0026B83E /* UIBarButtonItem+FlatUI.m */,
+				FCBB7ED4177BDFAE0026B83E /* UINavigationBar+FlatUI.h */,
+				FCBB7ED5177BDFAE0026B83E /* UINavigationBar+FlatUI.m */,
+				FCBB7ED7177BE0DE0026B83E /* UIImage+FlatUI.h */,
+				FCBB7ED8177BE0DE0026B83E /* UIImage+FlatUI.m */,
+				FCBB7EBA177A94860026B83E /* KTAppDelegate.h */,
+				FCBB7EBB177A94860026B83E /* KTAppDelegate.m */,
+				FCBB7EC3177A94860026B83E /* KTMasterViewController.h */,
+				FCBB7EC4177A94860026B83E /* KTMasterViewController.m */,
+				FCBB7EC6177A94860026B83E /* KTDetailViewController.h */,
+				FCBB7EC7177A94860026B83E /* KTDetailViewController.m */,
+				FCBB7EC9177A94860026B83E /* KTMasterViewController.xib */,
+				FCBB7ECC177A94860026B83E /* KTDetailViewController.xib */,
+				FCBB7EB2177A94860026B83E /* Supporting Files */,
+				FCBB7EDD177BECE70026B83E /* SectionHeaderView.h */,
+				FCBB7EDE177BECE70026B83E /* SectionHeaderView.m */,
+			);
+			path = "FastScrolling-UITableViews";
+			sourceTree = "<group>";
+		};
+		FCBB7EB2177A94860026B83E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB7EB3177A94860026B83E /* FastScrolling-UITableViews-Info.plist */,
+				FCBB7EB4177A94860026B83E /* InfoPlist.strings */,
+				FCBB7EB7177A94860026B83E /* main.m */,
+				FCBB7EB9177A94860026B83E /* FastScrolling-UITableViews-Prefix.pch */,
+				FCBB7EBD177A94860026B83E /* Default.png */,
+				FCBB7EBF177A94860026B83E /* Default@2x.png */,
+				FCBB7EC1177A94860026B83E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCBB7EA7177A94850026B83E /* FastScrolling-UITableViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBB7ED1177A94860026B83E /* Build configuration list for PBXNativeTarget "FastScrolling-UITableViews" */;
+			buildPhases = (
+				FCBB7EA4177A94850026B83E /* Sources */,
+				FCBB7EA5177A94850026B83E /* Frameworks */,
+				FCBB7EA6177A94850026B83E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastScrolling-UITableViews";
+			productName = "FastScrolling-UITableViews";
+			productReference = FCBB7EA8177A94860026B83E /* FastScrolling-UITableViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCBB7EA0177A94850026B83E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kurry L Tran";
+			};
+			buildConfigurationList = FCBB7EA3177A94850026B83E /* Build configuration list for PBXProject "FastScrolling-UITableViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCBB7E9F177A94850026B83E;
+			productRefGroup = FCBB7EA9177A94860026B83E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCBB7EA7177A94850026B83E /* FastScrolling-UITableViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCBB7EA6177A94850026B83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBB7EB6177A94860026B83E /* InfoPlist.strings in Resources */,
+				FCBB7EBE177A94860026B83E /* Default.png in Resources */,
+				FCBB7EC0177A94860026B83E /* Default@2x.png in Resources */,
+				FCBB7EC2177A94860026B83E /* Default-568h@2x.png in Resources */,
+				FCBB7ECB177A94860026B83E /* KTMasterViewController.xib in Resources */,
+				FCBB7ECE177A94860026B83E /* KTDetailViewController.xib in Resources */,
+				FCBAE0F1177C7DC40030EBED /* PLPhotoStreamAlbumIcon@2x.png in Resources */,
+				FCBAE0F3177C7EEE0030EBED /* feed-search-suggestion-icon-morning@2x.png in Resources */,
+				FCBAE0F5177C7FA70030EBED /* search-icon-timeline-translucent@2x.png in Resources */,
+				FC01CAA9177C8895001A912C /* placeholder@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCBB7EA4177A94850026B83E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBB7EB8177A94860026B83E /* main.m in Sources */,
+				FCBB7EBC177A94860026B83E /* KTAppDelegate.m in Sources */,
+				FCBB7EC5177A94860026B83E /* KTMasterViewController.m in Sources */,
+				FCBB7EC8177A94860026B83E /* KTDetailViewController.m in Sources */,
+				FCBB7ED6177BDFAE0026B83E /* UINavigationBar+FlatUI.m in Sources */,
+				FCBB7ED9177BE0DE0026B83E /* UIImage+FlatUI.m in Sources */,
+				FCE1C8AD177C83F7009B3233 /* ABTableViewCell.m in Sources */,
+				FCBB7EDC177BE52E0026B83E /* UIBarButtonItem+FlatUI.m in Sources */,
+				FCBB7EDF177BECE70026B83E /* SectionHeaderView.m in Sources */,
+				FCBB7EE4177BEDB10026B83E /* UIColor+LightAndDark.m in Sources */,
+				FC01CAA7177C8579001A912C /* KTTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCBB7EB4177A94860026B83E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCBB7EB5177A94860026B83E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FCBB7EC9177A94860026B83E /* KTMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCBB7ECA177A94860026B83E /* en */,
+			);
+			name = KTMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		FCBB7ECC177A94860026B83E /* KTDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCBB7ECD177A94860026B83E /* en */,
+			);
+			name = KTDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCBB7ECF177A94860026B83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCBB7ED0177A94860026B83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCBB7ED2177A94860026B83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastScrolling-UITableViews/FastScrolling-UITableViews-Prefix.pch";
+				INFOPLIST_FILE = "FastScrolling-UITableViews/FastScrolling-UITableViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FCBB7ED3177A94860026B83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastScrolling-UITableViews/FastScrolling-UITableViews-Prefix.pch";
+				INFOPLIST_FILE = "FastScrolling-UITableViews/FastScrolling-UITableViews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCBB7EA3177A94850026B83E /* Build configuration list for PBXProject "FastScrolling-UITableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBB7ECF177A94860026B83E /* Debug */,
+				FCBB7ED0177A94860026B83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBB7ED1177A94860026B83E /* Build configuration list for PBXNativeTarget "FastScrolling-UITableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBB7ED2177A94860026B83E /* Debug */,
+				FCBB7ED3177A94860026B83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCBB7EA0177A94850026B83E /* Project object */;
+}

@@ -375,7 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: changlei han (CKRBK8NJR3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Felix Yang (QDYQ5PH33D)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -384,7 +384,7 @@
 				INFOPLIST_FILE = "Bluetooth-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = Bluetooth;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "32A5E3C1-276F-4DBE-BB9D-59DDF90E9DB9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E7260102-0917-4832-898C-C78FD63BFFE6";
 				SDKROOT = iphoneos4.3;
 			};
 			name = Debug;
