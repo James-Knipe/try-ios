@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Development</key>
+	<dict>
+		<key>MTAPIEndpoint</key>
+		<string>12</string>
+		<key>MTLoggingEnabled</key>
+		<true/>
+	</dict>
+	<key>Staging</key>
+	<dict>
+		<key>MTAPIEndpoint</key>
+		<string>234</string>
+		<key>MTLoggingEnabled</key>
+		<true/>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>MTAPIEndpoint</key>
+		<string>78899999</string>
+		<key>MTLoggingEnabled</key>
+		<true/>
+	</dict>
+	<key>Debug</key>
+	<dict>
+		<key>MTAPIEndpoint</key>
+		<string>asdfasdfasfdasdfaf</string>
+		<key>MTLoggingEnabled</key>
+		<true/>
+	</dict>
+	<key>Release</key>
+	<dict>
+		<key>MTAPIEndpoint</key>
+		<string>sasfdasdfadfs</string>
+		<key>MTLoggingEnabled</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

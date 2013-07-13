@@ -1,8 +1,12 @@
 Study iOS Development 
 ===================
 
+# 2013-07-13
+> * iOS Quick Tip: Managing Configurations With Ease
+
 # 2013-07-03
 > * Core Data on iOS 5 Tutorial: How To Preload and Import Existing Data
+> * How To Use NSFetchedResultsController
 
 # 2013-07-02
 > * Core Data on iOS 5 Tutorial: Getting Started
