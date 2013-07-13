@@ -3,6 +3,7 @@ Study iOS Development
 
 # 2013-07-13
 > * iOS Quick Tip: Managing Configurations With Ease
+> * Add Blocks Study Examples
 
 # 2013-07-03
 > * Core Data on iOS 5 Tutorial: How To Preload and Import Existing Data
