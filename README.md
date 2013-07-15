@@ -1,6 +1,10 @@
 Study iOS Development 
 ===================
 
+# 2013-07-14
+> * Deep Study Blocks
+> * Memory Management
+
 # 2013-07-13
 > * iOS Quick Tip: Managing Configurations With Ease
 > * Add Blocks Study Examples
