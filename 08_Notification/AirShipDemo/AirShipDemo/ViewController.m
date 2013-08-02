@@ -18,8 +18,14 @@
 #define kiPadDevelopmentApplicationSecret               @"MZjrqOHKQrSIih4TKZgm_w"
 #define kiPadDevelopmentApplicationMasterSecret         @"rzof30icSxSNRUw3HCJPew"
 
+
+#define kAuroraPhaseIIDevelopmentApplicationSecret @"kwrMxqC2S8CWXOQeyMt3Rw"
+#define kAuroraPhaseIIDevelopmentApplicationKey   @"2AHIYqlIS06k_DmXixMRPg"
+#define kAuroraPhaseIIMasterSecret @"oAsEcNlbTW-6N1luEI0rbw"
+
 #define kiPhoneDeviceToken @"F917EC02CF4ECA9E765EBA06F57A586FDB87897F8C5127D74D14A0B72C936BDD"
 #define kiPadDeviceToken @"3AB48C15BA72214072A943B164EA4ECD9D134C6008126C71DF214DCFCEA67059"
+#define kiPhone5DeviceToken @"F917EC02CF4ECA9E765EBA06F57A586FDB87897F8C5127D74D14A0B72C936BDD"
 
 @interface ViewController ()
 {
@@ -45,8 +51,9 @@
 
 -(IBAction)testSendNotification:(id)sender
 {
-    [self sendToiPhone];
-    [self sendToiPad];
+    //[self sendToiPhone];
+    //[self sendToiPad];
+    [self sendToAuroraPhaseII];
 }
 
 - (void)sendToiPhone
@@ -89,6 +96,29 @@
                                                                 key:kiPadDevelopmentApplicationKey
                                                              secret:kiPadDevelopmentApplicationSecret
                                                              master:kiPadDevelopmentApplicationMasterSecret];
+    }
+    [suburbanAirship pushSuburbanAirshipNotification:saNotif];
+}
+
+- (void)sendToAuroraPhaseII
+{
+    
+    SuburbanAirshipNotification *saNotif = [SuburbanAirshipNotification alert:@"Test Message!"
+                                                                        sound:@"notification.caf"
+                                                                        badge:nil
+                                                                         date:nil
+                                                                  deviceToken:kiPhone5DeviceToken
+                                                                          tag:nil
+                                                                       queued:NO];
+    if(suburbanAirship){
+        [suburbanAirship setAppKey:kAuroraPhaseIIDevelopmentApplicationKey];
+        [suburbanAirship setAppSecret:kAuroraPhaseIIDevelopmentApplicationSecret];
+        [suburbanAirship setAppMaster:kAuroraPhaseIIMasterSecret];
+    } else {
+        suburbanAirship = [[SuburbanAirship alloc] initWithDelegate:self
+                                                                key:kAuroraPhaseIIDevelopmentApplicationKey
+                                                             secret:kAuroraPhaseIIDevelopmentApplicationSecret
+                                                             master:kAuroraPhaseIIMasterSecret];
     }
     [suburbanAirship pushSuburbanAirshipNotification:saNotif];
 }

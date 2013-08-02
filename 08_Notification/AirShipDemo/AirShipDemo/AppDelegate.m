@@ -72,7 +72,7 @@
     }
     NSDictionary* aps = [userInfo valueForKey:@"aps"];
     NSDictionary* alert = [aps valueForKey:@"alert"];
-    NSString *body = [NSString stringWithFormat:[alert valueForKey:@"body"]];
+    NSString *body = [NSString stringWithFormat:[alert valueForKey:@"body"],nil];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:body
                                                         message:nil
                                                        delegate:nil
