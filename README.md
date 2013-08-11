@@ -1,8 +1,11 @@
 Study iOS Development 
 ===================
 
+# 2013-08-11
+> * Supporting Multiple iOS Versions and Devices
+
 # 2013-08-02
-* * Add a GCD demo to get network time.
+> * Add a GCD demo to get network time.
 
 # 2013-07-14
 > * Deep Study Blocks
